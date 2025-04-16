@@ -5,7 +5,7 @@ pipeline {
         stage("Continuous Integration / Intégration Continue") {
             agent { label "${AGENT_NODE}" }
             steps {
-                git branch: "main", url: "https://github.com/fredericBui/next_CICDCD.git"
+                git branch: "main", url: "https://github.com/ABoudjemaa/next_CICDCD"
                 sh "npm install"
                 sh "npm run build"
             }
